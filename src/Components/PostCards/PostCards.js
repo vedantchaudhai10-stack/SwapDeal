@@ -37,6 +37,13 @@ function PostCards({ product, index }) {
 
   const handleClick = () => {
     setPostContent(product);
+    console.log("Clicked product id check:", {
+  id: product?.id,
+  productId: product?.productId,
+  adId: product?.adId,
+  slug: product?.slug,
+  firestoreId: product?.firestoreId,
+});
     history.push(product?.id ? `/ad/${product.id}` : '/view');
   };
 

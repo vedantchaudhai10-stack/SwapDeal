@@ -1,7 +1,7 @@
-import React, { useState, useContext, useRef, useEffect, useCallback } from 'react';
-import { useHistory, Link } from 'react-router-dom';
-import { NotificationContext } from '../../contextStore/NotificationContext';
+import { useCallback, useContext, useEffect, useRef, useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import { AuthContext } from '../../contextStore/AuthContext';
+import { NotificationContext } from '../../contextStore/NotificationContext';
 import './NotificationBell.css';
 
 function NotificationBell() {
@@ -39,7 +39,7 @@ function NotificationBell() {
     if (notif.actionUrl) {
       history.push(notif.actionUrl);
     } else if (notif.data?.productId) {
-      history.push(`/ad/${notif.data.productId}`);
+      history.push(`/ad/${notif.data.Id}`);
     } else if (notif.data?.offerId) {
       history.push('/dashboard/offers');
     } else {
