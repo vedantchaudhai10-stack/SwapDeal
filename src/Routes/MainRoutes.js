@@ -1,52 +1,51 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import ProtectedRoute from '../Components/Auth/ProtectedRoute';
+import { Route, Switch } from 'react-router-dom';
 import AdminRoute from '../Components/Auth/AdminRoute';
-import ScrollToTop from '../Components/Navigation/ScrollToTop';
-import TopProgressBar from '../Components/Loading/TopProgressBar';
-import Home from '../Pages/Home';
-import Signup from '../Pages/Signup';
-import Login from '../Pages/Login';
-import ForgotPasswordPage from '../Pages/ForgotPassword';
-import CreatePost from '../Pages/CreatePost';
-import ViewPost from '../Pages/ViewPost';
-import ViewMore from '../Pages/ViewMore';
-import CategoryPageRoute from '../Pages/CategoryPage';
-import NotFound from '../Pages/NotFound';
-import SearchResultsPage from '../Pages/SearchResults';
-import Dashboard from '../Pages/Dashboard';
-import Profile from '../Pages/Profile';
-import EditProfile from '../Pages/EditProfile';
-import EditAdPage from '../Pages/EditAd';
-import MessagesPage from '../Pages/Messages';
-import ChatPage from '../Pages/Chat';
-import NotificationsPage from '../Pages/Notifications';
-import AboutPage from '../Pages/AboutPage';
-import CareersPage from '../Pages/CareersPage';
-import ContactPage from '../Pages/ContactPage';
-import PeoplePage from '../Pages/PeoplePage';
-import HelpPage from '../Pages/HelpPage';
-import SitemapPage from '../Pages/SitemapPage';
-import LegalPage from '../Pages/LegalPage';
-import Nearby from '../Pages/Nearby';
-import AdminDashboard from '../Pages/Admin/AdminDashboard';
-import AdminUsers from '../Pages/Admin/AdminUsers';
-import AdminAds from '../Pages/Admin/AdminAds';
-import AdminReports from '../Pages/Admin/AdminReports';
-import AdminCategories from '../Pages/Admin/AdminCategories';
-import AdminAnalytics from '../Pages/Admin/AdminAnalytics';
-import AdminVerifications from '../Pages/Admin/AdminVerifications';
-import SellerStore from '../Pages/SellerStore';
-import PromoteAd from '../Pages/PromoteAd';
-import Compare from '../Pages/Compare';
-import TransactionsPage from '../Pages/Transactions';
-import AddressesPage from '../Pages/Addresses';
-import FollowersPage from '../Pages/FollowersPage';
+import ProtectedRoute from '../Components/Auth/ProtectedRoute';
 import CookieConsent from '../Components/CookieConsent/CookieConsent';
+import TopProgressBar from '../Components/Loading/TopProgressBar';
+import ScrollToTop from '../Components/Navigation/ScrollToTop';
+import AboutPage from '../Pages/AboutPage';
+import AddressesPage from '../Pages/Addresses';
+import AdminAds from '../Pages/Admin/AdminAds';
+import AdminAnalytics from '../Pages/Admin/AdminAnalytics';
+import AdminCategories from '../Pages/Admin/AdminCategories';
+import AdminDashboard from '../Pages/Admin/AdminDashboard';
+import AdminReports from '../Pages/Admin/AdminReports';
+import AdminUsers from '../Pages/Admin/AdminUsers';
+import AdminVerifications from '../Pages/Admin/AdminVerifications';
+import CareersPage from '../Pages/CareersPage';
+import CategoryPageRoute from '../Pages/CategoryPage';
+import ChatPage from '../Pages/Chat';
+import Compare from '../Pages/Compare';
+import ContactPage from '../Pages/ContactPage';
+import CreatePost from '../Pages/CreatePost';
+import Dashboard from '../Pages/Dashboard';
+import EditAdPage from '../Pages/EditAd';
+import EditProfile from '../Pages/EditProfile';
+import FollowersPage from '../Pages/FollowersPage';
+import ForgotPasswordPage from '../Pages/ForgotPassword';
+import HelpPage from '../Pages/HelpPage';
+import Home from '../Pages/Home';
+import LegalPage from '../Pages/LegalPage';
+import Login from '../Pages/Login';
+import MessagesPage from '../Pages/Messages';
+import Nearby from '../Pages/Nearby';
+import NotFound from '../Pages/NotFound';
+import NotificationsPage from '../Pages/Notifications';
+import PeoplePage from '../Pages/PeoplePage';
+import Profile from '../Pages/Profile';
+import PromoteAd from '../Pages/PromoteAd';
+import SearchResultsPage from '../Pages/SearchResults';
+import SellerStore from '../Pages/SellerStore';
+import Signup from '../Pages/Signup';
+import SitemapPage from '../Pages/SitemapPage';
+import TransactionsPage from '../Pages/Transactions';
+import ViewMore from '../Pages/ViewMore';
+import ViewPost from '../Pages/ViewPost';
 
 function MainRoutes() {
   return (
-    <Router>
+    <>
       <TopProgressBar />
       <ScrollToTop />
       <CookieConsent />
@@ -172,7 +171,7 @@ function MainRoutes() {
           <NotFound />
         </Route>
       </Switch>
-    </Router>
+    </>
   );
 }
 
