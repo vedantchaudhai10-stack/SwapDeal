@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/SwapDeal/static/css/main.61256683.chunk.css",
-    "main.js": "/SwapDeal/static/js/main.2cd97846.chunk.js",
-    "main.js.map": "/SwapDeal/static/js/main.2cd97846.chunk.js.map",
+    "main.css": "/SwapDeal/static/css/main.c8b1bade.chunk.css",
+    "main.js": "/SwapDeal/static/js/main.053ddabf.chunk.js",
+    "main.js.map": "/SwapDeal/static/js/main.053ddabf.chunk.js.map",
     "runtime-main.js": "/SwapDeal/static/js/runtime-main.9e99c149.js",
     "runtime-main.js.map": "/SwapDeal/static/js/runtime-main.9e99c149.js.map",
-    "static/js/2.8ebf4948.chunk.js": "/SwapDeal/static/js/2.8ebf4948.chunk.js",
-    "static/js/2.8ebf4948.chunk.js.map": "/SwapDeal/static/js/2.8ebf4948.chunk.js.map",
+    "static/js/2.c64c6146.chunk.js": "/SwapDeal/static/js/2.c64c6146.chunk.js",
+    "static/js/2.c64c6146.chunk.js.map": "/SwapDeal/static/js/2.c64c6146.chunk.js.map",
     "index.html": "/SwapDeal/index.html",
-    "static/css/main.61256683.chunk.css.map": "/SwapDeal/static/css/main.61256683.chunk.css.map",
-    "static/js/2.8ebf4948.chunk.js.LICENSE.txt": "/SwapDeal/static/js/2.8ebf4948.chunk.js.LICENSE.txt"
+    "static/css/main.c8b1bade.chunk.css.map": "/SwapDeal/static/css/main.c8b1bade.chunk.css.map",
+    "static/js/2.c64c6146.chunk.js.LICENSE.txt": "/SwapDeal/static/js/2.c64c6146.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9e99c149.js",
-    "static/js/2.8ebf4948.chunk.js",
-    "static/css/main.61256683.chunk.css",
-    "static/js/main.2cd97846.chunk.js"
+    "static/js/2.c64c6146.chunk.js",
+    "static/css/main.c8b1bade.chunk.css",
+    "static/js/main.053ddabf.chunk.js"
   ]
 }
