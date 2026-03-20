@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/SwapDeal/static/css/main.61256683.chunk.css",
+    "main.js": "/SwapDeal/static/js/main.3bd794e6.chunk.js",
+    "main.js.map": "/SwapDeal/static/js/main.3bd794e6.chunk.js.map",
+    "runtime-main.js": "/SwapDeal/static/js/runtime-main.9e99c149.js",
+    "runtime-main.js.map": "/SwapDeal/static/js/runtime-main.9e99c149.js.map",
+    "static/js/2.387d35be.chunk.js": "/SwapDeal/static/js/2.387d35be.chunk.js",
+    "static/js/2.387d35be.chunk.js.map": "/SwapDeal/static/js/2.387d35be.chunk.js.map",
+    "index.html": "/SwapDeal/index.html",
+    "static/css/main.61256683.chunk.css.map": "/SwapDeal/static/css/main.61256683.chunk.css.map",
+    "static/js/2.387d35be.chunk.js.LICENSE.txt": "/SwapDeal/static/js/2.387d35be.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9e99c149.js",
+    "static/js/2.387d35be.chunk.js",
+    "static/css/main.61256683.chunk.css",
+    "static/js/main.3bd794e6.chunk.js"
+  ]
+}
