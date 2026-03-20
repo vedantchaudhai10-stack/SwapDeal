@@ -1,0 +1,197 @@
+.adminUsersPage {
+  padding: 12px 4px;
+}
+
+.adminUsersHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.adminUsersHeader h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.adminUsersHeader p {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.adminUsersFilterBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.adminUsersFilterBox label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.adminUsersFilterBox select {
+  min-width: 180px;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #fff;
+  outline: none;
+  font-size: 14px;
+}
+
+.adminUsersCard {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.adminUsersTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.adminUsersTable thead {
+  background: #f8fafc;
+}
+
+.adminUsersTable th {
+  text-align: left;
+  padding: 18px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.adminUsersTable td {
+  padding: 16px;
+  font-size: 14px;
+  color: #1f2937;
+  border-bottom: 1px solid #eef2f7;
+  vertical-align: middle;
+}
+
+.adminUsersTable tbody tr:hover {
+  background: #fafafa;
+}
+
+.userIdCell {
+  font-family: monospace;
+  color: #6b7280;
+}
+
+.userNameCell {
+  font-weight: 600;
+}
+
+.userEmailCell {
+  color: #374151;
+}
+
+.actionGroup {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.actionGroup button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.suspendBtn {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.suspendBtn:hover {
+  background: #ffedd5;
+}
+
+.activateBtn {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.activateBtn:hover {
+  background: #bbf7d0;
+}
+
+.deleteBtn {
+  background: #ef4444;
+  color: #fff;
+}
+
+.deleteBtn:hover {
+  background: #dc2626;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.badgeGreen {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badgeRed {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.badgeYellow {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badgeGray {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.badgeBlue {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badgePurple {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.adminUsersLoading,
+.adminUsersEmpty {
+  padding: 24px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+  .adminTableWrap {
+    overflow-x: auto;
+  }
+
+  .adminUsersTable {
+    min-width: 950px;
+  }
+}

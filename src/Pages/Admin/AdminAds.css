@@ -1,0 +1,200 @@
+.adminAdsPage {
+  padding: 12px 4px;
+}
+
+.adminAdsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.adminAdsHeader h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.adminAdsHeader p {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.adminAdsFilterBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.adminAdsFilterBox label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.adminAdsFilterBox select {
+  min-width: 180px;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #fff;
+  outline: none;
+  font-size: 14px;
+}
+
+.adminAdsCard {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.adminAdsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.adminAdsTable thead {
+  background: #f8fafc;
+}
+
+.adminAdsTable th {
+  text-align: left;
+  padding: 18px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.adminAdsTable td {
+  padding: 16px;
+  font-size: 14px;
+  color: #1f2937;
+  border-bottom: 1px solid #eef2f7;
+  vertical-align: middle;
+}
+
+.adminAdsTable tbody tr:hover {
+  background: #fafafa;
+}
+
+.adTitleCell {
+  max-width: 280px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.userIdCell {
+  font-family: monospace;
+  color: #6b7280;
+}
+
+.viewAdLink {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.viewAdLink:hover {
+  text-decoration: underline;
+}
+
+.actionGroup {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.actionGroup button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.approveBtn {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.approveBtn:hover {
+  background: #bbf7d0;
+}
+
+.rejectBtn {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.rejectBtn:hover {
+  background: #fecaca;
+}
+
+.deleteBtn {
+  background: #ef4444;
+  color: #fff;
+}
+
+.deleteBtn:hover {
+  background: #dc2626;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.badgeGreen {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badgeYellow {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badgeRed {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.badgeOrange {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.badgeGray {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.adminAdsLoading,
+.adminAdsEmpty {
+  padding: 24px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+  .adminTableWrap {
+    overflow-x: auto;
+  }
+
+  .adminAdsTable {
+    min-width: 980px;
+  }
+}

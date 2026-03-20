@@ -1,0 +1,245 @@
+.loginPageWrapper {
+  padding: var(--olx-content-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  /* 🔥 upgraded background */
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+}
+
+/* Back link */
+.loginHomeLink {
+  align-self: flex-start;
+  margin-bottom: 16px;
+  color: var(--olx-primary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.loginHomeLink:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+/* 🔥 Card */
+.loginParentDiv {
+  width: 90%;
+  max-width: 400px;
+  padding: 28px;
+  border-radius: 16px;
+
+  border: 1px solid var(--olx-border);
+
+  /* glass effect */
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease;
+}
+
+.loginParentDiv:hover {
+  transform: translateY(-5px);
+}
+
+/* Logo */
+.loginLogoLink {
+  display: block;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.loginParentDiv img {
+  display: block;
+  margin: 0 auto;
+  max-width: 180px;
+}
+
+/* Form */
+.loginFormGroup {
+  margin-bottom: 18px;
+}
+
+.loginFormGroup label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--olx-text);
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* 🔥 Input upgraded */
+.loginParentDiv .input {
+  width: 100%;
+  padding: 12px 0 10px;
+  font-size: 15px;
+  color: var(--olx-text);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--olx-border);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.loginParentDiv .input::placeholder {
+  color: var(--olx-text-muted);
+}
+
+.loginParentDiv .input:focus {
+  border-bottom-color: var(--olx-primary);
+  box-shadow: 0 4px 10px rgba(0, 114, 255, 0.1);
+}
+
+/* Error */
+.formError {
+  display: block;
+  color: var(--olx-error);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Forgot */
+.loginForgotLink {
+  font-size: 13px;
+  color: var(--olx-primary);
+  margin-top: 4px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.loginForgotLink:hover {
+  text-decoration: underline;
+}
+
+/* 🔥 Login Button */
+.loginParentDiv button[type='submit'] {
+  width: 100%;
+  height: 48px;
+  margin-top: 10px;
+
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+
+  font-weight: 700;
+  font-size: 16px;
+
+  border-radius: 10px;
+  border: none;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loginParentDiv button[type='submit']:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Divider */
+.loginDivider {
+  text-align: center;
+  margin: 18px 0 12px;
+  color: var(--olx-text-muted);
+  font-size: 14px;
+}
+
+/* 🔥 Google Button */
+.loginGoogleBtn {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 12px;
+
+  background: #fff;
+  color: var(--olx-primary);
+
+  border-radius: 10px;
+  border: 1px solid #ddd;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.loginGoogleBtn:hover {
+  background: #f9f9f9;
+  transform: translateY(-2px);
+}
+
+/* 🔥 Guest Button */
+.loginGuestBtn {
+  width: 100%;
+  height: 44px;
+  margin-top: 8px;
+
+  background: #f5f5f5;
+  color: var(--olx-text-muted);
+
+  border-radius: 10px;
+  border: none;
+
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.loginGuestBtn:hover {
+  background: #eaeaea;
+  transform: translateY(-2px);
+}
+
+/* Signup */
+.loginSignupLink {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: var(--olx-primary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.loginSignupLink:hover {
+  text-decoration: underline;
+}
+
+/* 🔥 Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .loginPageWrapper {
+    padding: 16px;
+  }
+
+  .loginParentDiv {
+    padding: 20px;
+  }
+
+  .loginParentDiv button[type='submit'],
+  .loginGoogleBtn {
+    height: 44px;
+  }
+
+  .loginGuestBtn {
+    height: 40px;
+  }
+}
