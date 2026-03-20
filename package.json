@@ -1,6 +1,7 @@
 {
   "name": "olx",
   "version": "0.1.0",
+  "homepage": "https://vedantchaudhai10-stack.github.io/SwapDeal",
   "engines": {
     "node": ">=20.0.0"
   },
@@ -23,7 +24,8 @@
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && firebase deploy",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "deploy:hosting": "npm run build && firebase deploy --only hosting",
     "deploy:rules": "firebase deploy --only firestore:rules,storage",
     "deploy:indexes": "firebase deploy --only firestore:indexes",
@@ -52,6 +54,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "gh-pages": "^6.3.0",
     "prettier": "^3.8.1",
     "web-vitals": "^1.1.2"
   }

@@ -1,5 +1,5 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter } from 'react-router-dom';
 import App from './App';
 import ErrorBoundary from './Components/ErrorBoundary/ErrorBoundary';
 import { initAnalytics } from './firebase/analytics';
@@ -9,7 +9,6 @@ import { fetchRemoteConfig } from './firebase/remoteConfig';
 import { silentCatch } from './utils/errorHandler';
 
 // Suppress Firestore internal permission errors that bypass onSnapshot handlers
-// (caused by the SDK's enqueueAndForget in persistent_stream when rules reject a listener)
 window.addEventListener('unhandledrejection', (event) => {
   const err = event.reason;
   if (err && err.code === 'permission-denied') {
@@ -18,15 +17,16 @@ window.addEventListener('unhandledrejection', (event) => {
   }
 });
 
-// Initialize Firebase services (Analytics, Performance, Remote Config, App Check)
 initAnalytics();
 initPerformance();
 initAppCheck();
 fetchRemoteConfig().catch(silentCatch('index:fetchRemoteConfig'));
 
 ReactDOM.render(
-  <ErrorBoundary>
-    <App />
-  </ErrorBoundary>,
+  <HashRouter>
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
+  </HashRouter>,
   document.getElementById('root')
 );
